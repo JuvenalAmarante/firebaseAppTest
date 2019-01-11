@@ -7,7 +7,8 @@ import {
   ToastAndroid,
   ImageBackground,
   Image,
-  Modal
+  Modal,
+  StatusBar
 } from "react-native";
 
 import { Icon } from 'react-native-elements';
@@ -77,6 +78,7 @@ export default class LoginPage extends Component {
         source={require("./../../images/back1.jpg")}
         style={styles.background}
       >
+      <StatusBar hidden/>
         <Image source={firebaseLogo} style={styles.logo} />
         <View style={styles.form}>
           <TextInput

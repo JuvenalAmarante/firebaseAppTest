@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
     marginLeft: wp("12%"),
     position: "absolute",
     width: wp("76%"),
-    height: hp("50%"),
+    height: hp("60%"),
     borderRadius: hp("2%"),
     backgroundColor: "#F5FCFF",
     opacity: 0.6,
