@@ -27,7 +27,9 @@ export default class LoginPage extends Component {
     password: null
   };
 
-  componentDidMount = () => {
+  
+
+	ComponentDidMount = () => {
     if (
       firebase.auth().currentUser != null ||
       firebase.auth().currentUser != undefined
