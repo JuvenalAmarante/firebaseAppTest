@@ -9,7 +9,7 @@ export default class HomePage extends Component {
             <DrawerLayoutAndroid
               drawerWidth={styles.drawerWidth}
               drawerPosition={DrawerLayoutAndroid.positions.Left}
-              renderNavigationView={Drawer}>
+              renderNavigationView={()=>Drawer}>
                 <Text>Bem vindo a HomePage</Text>
             </DrawerLayoutAndroid>
         );
