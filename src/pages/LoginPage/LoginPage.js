@@ -29,10 +29,12 @@ export default class LoginPage extends Component {
 
   
 
-	ComponentDidMount = () => {
+	ComponentDidMount = async () => {
+    const usuarioAtual = await firebase.auth().currentUser;
+
     if (
-      firebase.auth().currentUser != null ||
-      firebase.auth().currentUser != undefined
+      await  usuarioAtual != null ||
+      await  usuarioAtual != undefined
     ) {
       alert("logado");
     } else {
